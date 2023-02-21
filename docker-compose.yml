@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  postgres-database:
+    container_name: "JellyModWikiDB"
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: jelly
+      POSTGRES_PASSWORD: jelly
+      POSTGRES_DB: jelly
+
